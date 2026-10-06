@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" data-mode="on">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucien Arceneaux</title>
+  <meta name="description" content="Lore for Lucien Arceneaux, a reformed delinquent hiding behind his glasses at a New Orleans university.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Kalam:wght@400;700&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floodlight" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#top">Lucien Arceneaux</a>
+    <button class="toggle" id="toggle" type="button" aria-pressed="false">
+      <svg class="toggle-icon" viewBox="0 0 40 16" aria-hidden="true"><circle cx="9" cy="8" r="6.5"/><circle cx="31" cy="8" r="6.5"/><path d="M15.5 7.5 Q20 4.5 24.5 7.5"/></svg>
+      <span class="v-on">Take his glasses off</span>
+      <span class="v-off">Put his glasses back on</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <figure class="portrait">
+        <img src="images/lucien.jpg" alt="Lucien: shaggy black hair, thin black glasses, a lip ring, silver rings and a dark flannel, pushing his glasses up with one finger." width="1024" height="1024">
+      </figure>
+      <div class="hero-text">
+        <h1>
+          <span class="v-on">Lucien Arceneaux</span>
+          <span class="v-off">The Junkyard Dog</span>
+        </h1>
+        <p class="lede">
+          <span class="v-on">Freshman at Delacroix University, New Orleans. Polite, punctual and completely normal. Please don't tell nobody otherwise.</span>
+          <span class="v-off">Most feared fighter St. Bernard Parish ever had, hidin' in the back row of a lecture hall Uptown.</span>
+        </p>
+        <div class="bio">
+          <p class="v-on">He's the guy next to you in Intro to Sociology: black fringe in his eyes, thin glasses, black long sleeves in ninety-degree heat, and the tidiest notes in the class. Says "yes ma'am" to the professor. Apologizes to the vending machine.</p>
+          <p class="v-off">He spent a whole year scrubbing the old Lucien out so he could start over where nobody knows his name. Then three guys from his old crew found him behind a snoball stand, and you saw the whole thing.</p>
+          <p>Now he'll buy you a po'boy every day for the rest of the semester if you'll just keep quiet. He swears he's reformed. He also has the shortest fuse you've ever seen.</p>
+        </div>
+        <ul class="facts">
+          <li><span>Age</span>20</li>
+          <li><span>From</span>Chalmette, LA</li>
+          <li><span>Works at</span>Dog-Ear Books</li>
+          <li><span>Weakness</span>Pralines</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="notebook-section" aria-labelledby="nb-title">
+      <div class="notebook">
+        <h2 id="nb-title">Normal College Life</h2>
+        <p class="nb-hint">His checklist. He keeps it in his backpack at all times. Tap an item to check it off for him.</p>
+        <ol class="checklist" id="checklist"></ol>
+      </div>
+    </section>
+
+    <section class="lore" aria-labelledby="lore-title">
+      <h2 id="lore-title">
+        <span class="v-on">What he wants you to know</span>
+        <span class="v-off">What he ain't tellin' ya</span>
+      </h2>
+      <p class="lore-intro">
+        <span class="v-on">Some of this is blacked out. That's on purpose. He'd prefer it stayed that way.</span>
+        <span class="v-off">Everything. The levee party, the box under the bed, all of it. Don't tell Danny.</span>
+      </p>
+
+      <div class="controls">
+        <div class="filters" role="group" aria-label="Filter lore">
+          <button type="button" class="filter is-active" data-group="all" aria-pressed="true">All</button>
+          <button type="button" class="filter" data-group="places" aria-pressed="false">Places</button>
+          <button type="button" class="filter" data-group="past" aria-pressed="false">His past</button>
+          <button type="button" class="filter" data-group="habits" aria-pressed="false">Habits</button>
+          <button type="button" class="filter" data-group="people" aria-pressed="false">People</button>
+        </div>
+        <label class="search">
+          <span class="sr-only">Search the lore</span>
+          <input type="search" id="search" placeholder="Search the lore" autocomplete="off">
+        </label>
+      </div>
+
+      <div class="entries" id="entries"></div>
+      <p class="empty" id="empty" hidden>Nothing in the lore matches that. Try a name, like Daisy or Nicky.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- Replace the # links with your bot links. -->
+    <div class="chat-links">
+      <a class="chat" href="#">Chat with him on Janitor AI</a>
+      <a class="chat" href="#">Chat with him on Tipsy</a>
+    </div>
+    <p class="small">Lucien Arceneaux is an original character. All characters are adults.</p>
+  </footer>
+
+  <script src="lore.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
