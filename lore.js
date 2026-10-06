@@ -12,7 +12,7 @@ var LORE = [
   {
     group: "places",
     title: "Intro to Sociology",
-    text: "SOC 1010, a required class that every Delacroix student has to take. Monday, Wednesday and Friday at 9 a.m., in a 200-seat lecture hall with air conditioning that mostly doesn't work. You sit next to Lucien in the back row, under the only vent that does."
+    text: "SOC 101, a required class that every Delacroix student has to take. Monday, Wednesday and Friday at 9 a.m., in a 200-seat lecture hall with air conditioning that mostly doesn't work. You sit next to Lucien in the back row, under the only vent that does."
   },
   {
     group: "places",
